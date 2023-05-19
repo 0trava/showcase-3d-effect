@@ -70,21 +70,21 @@ body, html{
 }
 
 /* Свет*/
-.showcase::after{
+.showcase::after {
 	content: '';
+	position: absolute;
 	top: 0;
-	left: 0;
 	right: 0;
 	bottom: 0;
-	position: absolute;
+	left: 0;
 	background-image: url(../images/light.png);
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-position: center - 65px;
-	animation:  k-light 3s ease-in-out infinite;
+	background-position: center;
+	animation: k-light 3s ease-in-out infinite;
 }
 
-.showcase__video{
+.showcase__video {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -93,28 +93,25 @@ body, html{
 	object-fit: cover;
 	opacity: .48;
 }
-
-
 .showcase__content-wrapper {
 	position: relative;
 	z-index: 2;
 	height: 100%;
 	padding: var(--padding) 0;
-
 }
 
-.showcase__content-wrapper::before{
+.showcase__content-wrapper::before {
 	content: '';
 	position: absolute;
 	top: 0;
 	right: 0;
 	bottom: 0;
 	left: 0;
-	border-image: url(../images/glow.png);
+	background-image: url(../images/glow.png);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	animation:  k-glow 1.8s ease-in-out infinite;
+	animation: k-glow 1.6s ease-in-out infinite;
 }
 
 .showcase__header{
@@ -154,7 +151,7 @@ body, html{
 
 .showcase-carousel__item::after{
 	content: '';
-	width: 120px;
+	width: 40%;
 	height: 0;
 	position: absolute;
 	box-shadow: 0 0 45px 10px #010101;
