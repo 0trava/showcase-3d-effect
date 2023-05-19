@@ -3,6 +3,11 @@
 /* xl <= Extra extra large (xxl) */
 @media (max-width : 1400px) {
 
+	.showcase__content {
+		max-width: 1200px;
+		margin: auto;
+	}
+
 }
 
 /* lg <= Extra large (xl) */

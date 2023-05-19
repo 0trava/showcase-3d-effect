@@ -213,6 +213,52 @@ body, html{
 }
 
 
+/* NAVIGATION */
+
+.showcase-navigation {
+	overflow: hidden;
+	position: absolute;
+	z-index: 2;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	left: 0;
+
+
+}
+
+.showcase-navigation > * {
+	position: absolute;
+	height: 100%;
+	width: 50%;
+	outline: none;
+	cursor: pointer;
+}
+
+.showcase-navigation > *::before{
+	content: '?';
+	font-family: assassin-st;
+	opacity: 0;
+
+}
+
+.showcase-navigation > *::before:hover{
+	content: '?';
+	font-family: assassin-st;
+	opacity: 0;
+
+}
+
+.showcase-navigation__prev {
+
+}
+
+
+.showcase-navigation__next {
+	right: 0;
+
+
+}
 
 
 /* ANIMATION */
