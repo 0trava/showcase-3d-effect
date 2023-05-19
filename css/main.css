@@ -142,7 +142,12 @@ body, html{
 	text-align: center;
 	opacity: .25;
 	transform: scale(.75);
-	transition: opacity 1.8s var(--transition), transform 1.8s var(--transition);
+	transition: opacity 1.8s var(--transition), transform 1.8s var(--transition)
+}
+
+
+.showcase-carousel .swiper-wrapper{
+	transition: var(--transition);
 }
 
 /* Shadow down */
@@ -190,10 +195,9 @@ body, html{
 	transform: scale(.98);
 }
 
-.showcase-carousel__image-left{
+.showcase-carousel__image-left {
 	perspective-origin: left center;
-	clip-path:  polygon(0 0, 50% 0, 50% 100%, 0 100%); /* Обрезка половині изображения */
-	
+	clip-path: polygon(0 0, 50% 0, 50% 100%, 0 100%);
 }
 
 .showcase-carousel__image-left .showcase-carousel__image{
@@ -201,10 +205,11 @@ body, html{
 	animation-direction: alternate;
 }
 
-.showcase-carousel__image-right{
+.showcase-carousel__image-right {
 	perspective-origin: right center;
-	clip-path:  polygon(50% 0, 100% 0, 100% 100%, 50% 100%); /* Обрезка половині изображения */
-	
+	clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);
+	/* Фикс вертикальной полосы на некоторых дисплеях */
+	margin-left: -.85px
 }
 
 .showcase-carousel__image-right .showcase-carousel__image{
