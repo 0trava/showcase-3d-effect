@@ -157,6 +157,17 @@ body, html{
 	left: calc(50% - 60px);
 }
 
+.showcase-carousel__item p {
+	position: absolute;
+	bottom: -85px;
+	width: 100%;
+	font-family: assassin-st, sans-serif;
+	font-size: 32px;
+	color: rgba(255, 255, 255, .5);
+	text-shadow: rgb(58, 78, 94) 0 0 10px;
+}
+
+
 .showcase-carousel__image-wrapper > * {
 	position: absolute;
 	width: 100%;
