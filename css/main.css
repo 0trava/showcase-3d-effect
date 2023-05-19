@@ -50,9 +50,35 @@ body, html{
 .showcase {
 	background-color: black;
 	height: 100%;
+	width: 100%;
 	position: relative;
 	color: white;
 	overflow: hidden;
+}
+
+/* Винетка */
+.showcase::before{
+	content: '';
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 1;
+	box-shadow: inset 0 0 500px black;
+
+}
+
+/* Свет*/
+.showcase::after{
+	content: '';
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	position: absolute;
+	background-image: url(../images/light.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center - 65px;
 }
 
 .showcase__video{
@@ -62,9 +88,13 @@ body, html{
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
-
+	opacity: .5;
 }
+
+
 .showcase__content-wrapper {
 }
 .showcase__content {
 }
+
+/* ANIMATION */
