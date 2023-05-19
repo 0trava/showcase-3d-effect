@@ -235,28 +235,39 @@ body, html{
 	cursor: pointer;
 }
 
-.showcase-navigation > *::before{
+.showcase-navigation > *::before {
 	content: '?';
 	font-family: assassin-st;
 	opacity: 0;
+	transition: opacity .75s ease-out;
+	position: absolute;
+	transform: rotate(-90deg);
+	font-size: 40px;
+
 
 }
 
-.showcase-navigation > *::before:hover{
-	content: '?';
-	font-family: assassin-st;
-	opacity: 0;
-
+.showcase-navigation > *:hover::before{
+	opacity: .25;
 }
 
 .showcase-navigation__prev {
+	left: 50px;
+	top: 50%;
+	
 
 }
 
 
 .showcase-navigation__next {
 	right: 0;
+}
 
+.showcase-navigation__next::before{
+	transform: rotate(90deg);
+	right: 50px;
+	left: auto;
+	top: 50%;
 
 }
 
