@@ -243,8 +243,6 @@ body, html{
 	position: absolute;
 	transform: rotate(-90deg);
 	font-size: 40px;
-
-
 }
 
 .showcase-navigation > *:hover::before{
@@ -254,8 +252,6 @@ body, html{
 .showcase-navigation__prev {
 	left: 50px;
 	top: 50%;
-	
-
 }
 
 
@@ -268,7 +264,10 @@ body, html{
 	right: 50px;
 	left: auto;
 	top: 50%;
+}
 
+.showcase-navigation > *.swiper-button-disabled{
+	display: none;
 }
 
 
