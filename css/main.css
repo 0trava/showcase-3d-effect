@@ -196,10 +196,20 @@ body, html{
 	
 }
 
+.showcase-carousel__image-left .showcase-carousel__image{
+	animation: k-left-side 2s ease-in-out infinite;
+	animation-direction: alternate;
+}
+
 .showcase-carousel__image-right{
 	perspective-origin: right center;
 	clip-path:  polygon(50% 0, 100% 0, 100% 100%, 50% 100%); /* Обрезка половині изображения */
 	
+}
+
+.showcase-carousel__image-right .showcase-carousel__image{
+	animation: k-left-side 2s ease-in-out infinite;
+	animation-direction: alternate;
 }
 
 
@@ -229,6 +239,24 @@ body, html{
 	100%{
 		opacity: .6;
 	}
+}
 
+@keyframes k-left-side {
+	0%{
+		transform: rotateY(-1deg) scaleX(.92);
+	}
 
+	100%{
+		transform: rotateY(-0deg) scaleX(1);
+	}
+}
+
+@keyframes k-right-side {
+	0%{
+		transform: rotateY(0deg) scaleX(0);
+	}
+
+	100%{
+		transform: rotateY(-1deg) scaleX(.92);
+	}
 }
