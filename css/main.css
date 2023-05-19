@@ -140,6 +140,7 @@ body, html{
 	height: calc(100vh - var(--padding)*2);
 	text-align: center;
 	opacity: .25;
+	transform: scale(.75) ;
 }
 
 .showcase-carousel__image-wrapper > * {
@@ -157,7 +158,6 @@ body, html{
 	background-size: contain;
 	background-position: center;
 	background-repeat: no-repeat;
-	opacity: 0.25;
 }
 
 .showcase-carousel__item.swiper-slide-active {
