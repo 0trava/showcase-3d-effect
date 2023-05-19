@@ -8,7 +8,7 @@
 	--userfont: roboto-st, sans-serif;
 	--systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif;
 	--padding: 120px;
-	--transition: ease-in-out ;
+	--transition: cubic-bezier(.4, 0, 0, 1);
 }
 
 /* BOOTSTRAP SETTINGS SECTION */
@@ -143,6 +143,18 @@ body, html{
 	opacity: .25;
 	transform: scale(.75);
 	transition: opacity 1.8s var(--transition), transform 1.8s var(--transition);
+}
+
+/* Shadow down */
+
+.showcase-carousel__item::after{
+	content: '';
+	width: 120px;
+	height: 0;
+	position: absolute;
+	box-shadow: 0 0 45px 10px #010101;
+	bottom: 5px;
+	left: calc(50% - 60px);
 }
 
 .showcase-carousel__image-wrapper > * {
