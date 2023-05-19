@@ -8,6 +8,7 @@
 	--userfont: roboto-st, sans-serif;
 	--systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif;
 	--padding: 120px;
+	--transition: ease-in-out ;
 }
 
 /* BOOTSTRAP SETTINGS SECTION */
@@ -140,7 +141,8 @@ body, html{
 	height: calc(100vh - var(--padding)*2);
 	text-align: center;
 	opacity: .25;
-	transform: scale(.75) ;
+	transform: scale(.75);
+	transition: opacity 1.8s var(--transition), transform 1.8s var(--transition);
 }
 
 .showcase-carousel__image-wrapper > * {
